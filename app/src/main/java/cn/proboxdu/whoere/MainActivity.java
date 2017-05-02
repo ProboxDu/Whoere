@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
         Account.setUsername(getIntent().getStringExtra("name"));
         Account.setPassword(getIntent().getStringExtra("password"));
         Account.setLastMessageId(0);
-
         init();
         final SoftKeyboardStateWatcher watcher = new SoftKeyboardStateWatcher(findViewById(R.id.container), this);
         watcher.addSoftKeyboardStateListener(
